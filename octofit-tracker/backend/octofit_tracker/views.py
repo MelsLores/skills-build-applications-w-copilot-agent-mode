@@ -5,6 +5,8 @@ from rest_framework.reverse import reverse
 from .models import User, Team, Activity, Leaderboard, Workout
 from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
 
+base_url = 'https://skills-build-applications-w-copilot-agent-mode-8000.app.github.dev/'
+
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
